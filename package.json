@@ -1,0 +1,42 @@
+{
+  "name": "stopwatch",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "A simple timer/stopwatch desktop app built with Electron.",
+  "author": "Ren",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "make": "electron-forge make",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@electron-forge/cli": "^7.10.2",
+    "@electron-forge/maker-squirrel": "^7.10.2",
+    "@electron-forge/maker-zip": "^7.10.2",
+    "electron": "^38.4.0",
+    "electron-packager": "^17.1.2"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "stopwatch",
+            "authors": "Ren",
+            "description": "A simple timer/stopwatch desktop app built with Electron.",
+            "noMSI": true,
+            "signWithParams": ""
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": ["win32"]
+        }
+      ]
+    }
+  }
+}

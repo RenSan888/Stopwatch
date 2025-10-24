@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <!--Body-->
+  <body>
+
+    <!-- Current placeholder-->
+    <!-- <div id="placeholder">
+        <p class="para">Placeholder</p>
+    </div> -->
+    <!-- --> 
+
+    <!--Stopwatch section-->
+    <section class="container">
+        <div class="watch">
+            <h2 id="watch">00:00:00:00</h2>
+        </div>
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </section>
+    <!---->
+
+
+  </body>
+
+<!--Scripts-->
+  <script src="./renderer.js" defer></script>
+  <script src="script.js" defer></script>
+
+
+</html>

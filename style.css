@@ -1,0 +1,115 @@
+html,body {
+    height: 100%;
+}
+body {
+    background: #038C7F;
+    background: radial-gradient(ellipse at center,  #A9D9D0  0%, #A9D9D0 70%);
+    background-size: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: "Monaco", "Courier New", monospace;
+    color: #F2E7DC;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.watch {
+    letter-spacing: 0.05em;
+    font-size: 60px;
+    padding: 5px 0;
+}
+
+.buttons button {
+    font-family: "Monaco", monospace;
+    margin: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #027373;
+    background: #F2E7DC;
+    cursor: pointer;
+    border: 1px solid #027373;
+    transition: 0.5s ease;
+}
+
+button:hover {
+  background: #038C7F;
+  border-color: #038C7F;
+}
+
+button:active {
+  background: #038c7e69; 
+  border-color: #038c7e69;
+  box-shadow: 0 0 10px #038c7e69;
+  text-shadow: none;
+}
+
+
+
+/*side nav bar*/
+.side {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #027373;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.side a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #F2E7DC;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.side a:hover {
+  color: antiquewhite;
+}
+
+.side .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+#openBtn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  color: #027373;
+  background: #F2E7DC;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+#openBtn:hover {
+  background-color: #038C7F;
+  color: #F2E7DC;
+}
